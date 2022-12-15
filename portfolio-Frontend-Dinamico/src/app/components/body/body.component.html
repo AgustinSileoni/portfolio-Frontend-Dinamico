@@ -1,2 +1,44 @@
-<p>body works!</p>
-<button class="btn btn-primary">Algo</button>
+<body class="body-me">
+    
+    <div class="container">
+
+        <!--Name-->
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <h2 class="text-center titulo-nombre">Agustin Sileoni</h2>   
+            </div>
+        </div>
+
+        <!--Description-->
+        <div class="row">
+            <div class="col-12 ">
+                <h3 class="text-center description">
+                    Estudiante de ingenieria en computacion con intereses en el desarrollo web</h3>
+            </div>
+        </div>
+
+        <!--Buttons-->
+        <div class="text-center justify-content-center " >                   
+            <app-button 
+                [boton]="{id:1,text:'CV',link:''}">
+            </app-button>
+            <app-button class="buttons-center"
+                [boton]="{id:2,text:'Contacto',link:''}">
+            </app-button>
+        </div>
+
+        <!--Space-->
+        <div class="row">
+            <div class="col-md-12">
+                <p> </p>
+            </div>
+        </div>
+
+        <!--Cards-->
+        <app-cards-group></app-cards-group>
+        
+    </div>
+    <div class="">
+    <app-footer class="footer"></app-footer>
+    </div>
+</body>

@@ -1,50 +1,18 @@
+
+
+
 <nav class="navbar navbar-dark bg-dark navbar-expand-md no-space-padding text-center">
     <div class="container-fluid ">    
         <button class="navbar-toggler no-space-padding" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand centro" href="https://agustinsileoni.github.io/portfolio-FrontEnd/">
-                <img src="/portfolio-Frontend-Dinamico/portfolio-Frontend-Dinamico/src/images/logo_original_crop.png"
-                href="#" 
-                class="logo d-inline-block " 
-                alt="">
-                Agustin Sileoni
-            </a>
+            <app-logo></app-logo>
             <div class="navbar-collapse collapse justify-content-end " id="navbar">
-                <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="" href="https://www.linkedin.com/in/agustin-s-201137105/">
-                        <button type="button" 
-                        class="btn links btn-dark" 
-                        href="https://www.linkedin.com/in/agustin-s-201137105/">
-                        Linkedin</button>
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="" href="https://agustinsileoni.github.io/portfolio-FrontEnd/html/proyectos.html">
-                        <button type="button" 
-                        class="btn links btn-dark" 
-                        href="#">
-                        Proyectos</button>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="" href="https://agustinsileoni.github.io/portfolio-FrontEnd/html/herramientas.html">
-                        <button type="button"  
-                        class="btn links btn-dark" 
-                        href="#">
-                        Herramientas</button>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="" href="#">
-                        <button type="button" 
-                        class="btn links btn-dark" 
-                        href="#">
-                        Contacto</button>
-                    </a>
-                </li>
-                </ul>
+                <app-button
+                *ngFor="let boton of botones"
+                [boton]="boton"
+                >
+                </app-button>
             </div>
         </div>
 </nav>
