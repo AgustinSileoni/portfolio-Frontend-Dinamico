@@ -9,5 +9,6 @@ import { BOTONES } from 'src/app/mock-boton';
 })
 export class HeaderComponent {
   botones:Boton[]=BOTONES;
-
+  show:boolean=false;
+  
 }
