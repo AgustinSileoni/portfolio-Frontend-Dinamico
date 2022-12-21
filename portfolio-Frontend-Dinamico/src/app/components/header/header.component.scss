@@ -1,3 +1,13 @@
 .no-space-padding{
   padding: 0!important;
 }
+
+.boton{
+  display: flex;
+  flex-direction: column;
+  text-align: right ;
+}
+
+.encabezado{
+  display: flex;
+}

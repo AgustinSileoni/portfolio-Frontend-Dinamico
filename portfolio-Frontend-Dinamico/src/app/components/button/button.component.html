@@ -1,10 +1,22 @@
 <a
     class="boton" 
+    *ngIf="url()"
     href="{{boton.link}}"
 >
     <button
     type="button" 
     class="btn links btn-dark" 
-    href="">
+    >
+    {{boton.text}}</button>
+</a>
+<a
+    class="boton" 
+    *ngIf="!url()"
+    [routerLink]="[boton.link]"
+>
+    <button
+    type="button" 
+    class="btn links btn-dark" 
+    >
     {{boton.text}}</button>
 </a>

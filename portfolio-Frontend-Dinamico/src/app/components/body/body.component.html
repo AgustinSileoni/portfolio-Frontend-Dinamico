@@ -1,10 +1,10 @@
 <body class="body-me">
-    
+      
     <div class="container">
 
         <app-descripcion [title]="title" [texto]="text"></app-descripcion>
         
-        <!--Buttons-->
+        <!--Buttons
         <div class="text-center justify-content-center " >                   
             <app-button 
                 [boton]="{id:1,text:'CV',link:''}">
@@ -12,7 +12,7 @@
             <app-button class="buttons-center"
                 [boton]="{id:2,text:'Contacto',link:''}">
             </app-button>
-        </div>
+        </div>-->
 
         <!--Space-->
         <div class="row">
@@ -22,9 +22,10 @@
         </div>
 
         <!--Cards-->
+        <div class="container">
         <app-cards-group 
                 [file]="file" 
                 ></app-cards-group>
-        
+        </div>
     </div>
 </body>

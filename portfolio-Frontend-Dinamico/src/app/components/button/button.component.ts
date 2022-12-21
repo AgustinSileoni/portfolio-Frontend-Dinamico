@@ -9,5 +9,10 @@ import { BOTONES } from 'src/app/mock-boton';
 })
 export class ButtonComponent {
   @Input() boton:Boton={id:0,text:"",link:""}
-  
+  link:string=this.boton.link;
+
+  //Estudia si es una url o un path interno, version basica
+  url():boolean{
+    return /^http(?:s)?:\/{2}\S+$/.test(this.boton.link);
+  }
 }

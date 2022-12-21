@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Card } from 'src/app/Card';
+import { PROYECTOS } from 'src/app/mock-proyectos';
 
 @Component({
   selector: 'app-proyectos',
@@ -7,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class ProyectosComponent {
     title:string="Proyectos";
-    section:string="PROYECTOS";
+    file:Card[]=PROYECTOS;
 
 }

@@ -9,17 +9,17 @@ export const BOTONES:Boton[]=[
         {
             id:2,
             text:"Proyectos",
-            link:""
+            link:"proyectos"
         },
         {
             id:3,
             text:"Herramientas",
-            link:""
+            link:"/herramientas"
         },
         {
             id:4,
             text:"Contacto",
-            link:""
+            link:"/contacto"
         }
         
 ]

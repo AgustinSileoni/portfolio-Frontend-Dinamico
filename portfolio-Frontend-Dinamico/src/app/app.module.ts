@@ -15,12 +15,15 @@ import { PresentacionComponent } from './components/presentacion/presentacion.co
 import { DescripcionComponent } from './components/descripcion/descripcion.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HerramientasComponent } from './components/herramientas/herramientas.component';
+import { EstudiosComponent } from './components/estudios/estudios.component';
 
 const appRoutes:Routes=[
   {path: '', component:BodyComponent},
   {path: 'proyectos', component:ProyectosComponent},
   {path: 'herramientas', component:HerramientasComponent},
-  {path: 'presentacion', component:PresentacionComponent}
+  {path: 'presentacion', component:PresentacionComponent},
+  {path: 'linkedin', component:PresentacionComponent},
+  {path: 'estudios', component:EstudiosComponent}
 ]
 
 @NgModule({

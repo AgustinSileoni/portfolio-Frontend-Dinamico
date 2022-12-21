@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Card } from 'src/app/Card';
+import { HERRAMIENTAS } from 'src/app/mock-herramientas';
 
 @Component({
   selector: 'app-herramientas',
@@ -7,5 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HerramientasComponent {
     title:string="Herramientas";
+    seleccion:string="HERRAMIENTAS";
     texto:string="Herramientas utilizadas durante los proyectos"
+    herramientas:Card[]=HERRAMIENTAS;
+
+    card:Card=this.herramientas[0];
 }
