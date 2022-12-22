@@ -1,13 +1,20 @@
 .no-space-padding{
   padding: 0!important;
+  margin-left: 0;
+}
+
+//El logo no se pegue al boton
+.logo{
+  margin-left: 1vh;
 }
 
 .boton{
   display: flex;
   flex-direction: column;
-  text-align: right ;
+  text-align: center ;
 }
 
+//Para que el logo quede al costado del boton
 .encabezado{
   display: flex;
 }

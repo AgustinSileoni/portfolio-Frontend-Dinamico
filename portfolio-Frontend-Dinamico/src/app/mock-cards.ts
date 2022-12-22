@@ -3,20 +3,21 @@ import { Card } from "./Card";
 export const CARDS:Card[]=[
     {
         id:1,
-        text:"Presentacion",
+        text:"assets/images/PRESENTACION.png",
         link: "presentacion",
-        image: "assets/images/personal_life_original.jpg"
+        image: "assets/images/personal_life_1.jpg"
     },
     {
         id:2,
-        text:"Proyectos",
+        text:"assets/images/PROYECTOS.png",
         link: "proyectos",
         image: "assets/images/projects_original.jpg"
     },
     {
         id:3,
-        text:"Estudios",
+        text:"assets/images/ESTUDIOS.png",
         link: "estudios",
         image: "assets/images/study_original.jpg"
-    }
+    },
+    
 ]

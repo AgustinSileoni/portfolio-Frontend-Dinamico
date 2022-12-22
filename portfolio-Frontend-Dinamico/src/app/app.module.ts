@@ -16,6 +16,8 @@ import { DescripcionComponent } from './components/descripcion/descripcion.compo
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HerramientasComponent } from './components/herramientas/herramientas.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes:Routes=[
   {path: '', component:BodyComponent},
@@ -23,7 +25,8 @@ const appRoutes:Routes=[
   {path: 'herramientas', component:HerramientasComponent},
   {path: 'presentacion', component:PresentacionComponent},
   {path: 'linkedin', component:PresentacionComponent},
-  {path: 'estudios', component:EstudiosComponent}
+  {path: 'estudios', component:EstudiosComponent},
+  {path: 'contacto', component:ContactoComponent},
 ]
 
 @NgModule({
@@ -40,13 +43,16 @@ const appRoutes:Routes=[
     DescripcionComponent,
     ProyectosComponent,
     HerramientasComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes,{enableTracing:true})
+    RouterModule.forRoot(appRoutes,{enableTracing:true}),
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
